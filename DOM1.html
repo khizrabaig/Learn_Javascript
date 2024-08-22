@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; color:white">
+    <ul class="Languages">
+        <li>javascript</li>
+    </ul>
+</body>
+<script>
+    // function addLanguage(lang){
+    //    const lan= document.createElement('li');
+    //    lan.innerHTML=lang;
+    // //    const select=document.querySelector('.Languages')
+    // //    select.appendChild(lan)
+
+    // const select=document.querySelector('.Languages').appendChild(lan)
+
+    
+    // }
+
+    // addLanguage("python")
+    // addLanguage("c++")
+
+
+    function OptimizeFunction(lang){
+        const lan=document.createElement('li')
+        lan.appendChild(document.createTextNode(lang))
+        document.querySelector('.Languages').appendChild(lan)
+
+    }
+
+    OptimizeFunction('python')
+
+    //edit (3 different methods to edit content)
+
+    const edit=document.querySelector('li:nth-child(2)')
+    edit.innerHTML='mogo'
+
+    // let li=document.createElement('li')
+    // li.innerText="pyhton"
+    // edit.replaceWith(li)
+
+    // let change=document.querySelector('li:first-child')
+    // change.outerHTML='<li>c++</li>'
+
+    //remove
+    //  let remove=document.querySelector('li:first-child')
+    //  remove.remove()
+
+</script>
+</html>
